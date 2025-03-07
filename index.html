@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Interface</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="chatbot-container">
+    <div class="chatbot-header">
+      <span class="menu-icon">&#9776;</span>
+      <span class="title">CHATBOT</span>
+      <span class="profile-icon">&#128100;</span>
+    </div>
+    <div id="chatbot-body" class="chatbot-content"></div>  <div class="chatbot-footer">
+      <input type="text" id="user_input" placeholder="Type.." class="chat-input">
+      <button id="send-btn" class="send-button" onclick="sendMessage()">&#9650;</button>
+    </div>
+  </div>
+  <div id = "messages"></div>  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
+
